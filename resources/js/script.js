@@ -18,6 +18,21 @@ $(document).ready(function(){
       offset: '75%'
    });
    
+   $('.js--wp-2').waypoint(function(direction){
+      $('.js--wp-2').addClass('animated fadeInUp');
+   }, {
+      offset: '50%'
+   });
+   
+/* mobile menu */
+   $('.js--nav-icon').click(function(){
+      var nav = $('.js--main-nav');
+      
+      nav.slideToggle(200);
+   })
+   
 });
+
+
 
 
